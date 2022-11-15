@@ -85,6 +85,15 @@ button:hover{
     color: #fff;
 }
 
+.voltar{
+    text-align: center;
+    
+}
+
+#voltar{
+    width: 61vw;
+}
+
 .card h2 {
     display: flex;
     gap: 16px;
@@ -122,9 +131,18 @@ button:hover{
     align-items: center;
 }
 
-.card ul li + li {
+/*.card ul li + li {
     padding-top: 24px;
     border-top: 1px solid #323238;
+}*/
+
+.partidas {
+    padding-top: 24px;
+    border-top: 1px solid #323238;
+}
+
+.nomedospaises{
+    color: #E1E1E6;
 }
 
 .card ul li strong {
