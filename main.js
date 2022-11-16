@@ -41,7 +41,7 @@ function voltar(){
 }
 
 start();
-
+//testando
 document.querySelector('#app').innerHTML = `
 <header>
             <img src="assets/logo.svg" alt="">
