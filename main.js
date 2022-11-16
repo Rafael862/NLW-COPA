@@ -172,7 +172,7 @@ bntJogosHoje.addEventListener("click", () =>{
                     </header>
                     <main id="cards">
                     <div >
-                        ${createCard("16/11/2022","",createGame('Brasil', '14 X 0', 'Alemanha'))}
+                        ${createCard("16/11/2022","",createGame('brasil', '14 X 0', 'Alemanha'))}
                     </div>    
                     </main>
             `
