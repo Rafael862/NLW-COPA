@@ -86,7 +86,7 @@ document.querySelector('#app').innerHTML = `
              <br>
              ${createCard("30/11/2022", "quarta",createGame('Tunísia', '07:00', 'França')
              + createGame('Austrália', '10:00', 'Dinamarca')+ createGame('Polônia', '13:00', 'Argentina')
-             + createGame('Arábia-saudita', '16:00', 'México'))}
+             + createGame('Arábia-Saudita', '16:00', 'México'))}
              <br>
              ${createCard("01/12/2022", "quinta",createGame('Croácia', '07:00', 'Bélgica')
              + createGame('Canadá', '10:00', 'Marrocos')+ createGame('Japão', '13:00', 'Espanha')
