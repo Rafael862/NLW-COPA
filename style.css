@@ -85,15 +85,6 @@ button:hover{
     color: #fff;
 }
 
-.voltar{
-    text-align: center;
-    
-}
-
-#voltar{
-    width: 61vw;
-}
-
 .card h2 {
     display: flex;
     gap: 16px;
@@ -150,4 +141,16 @@ button:hover{
     font-size: 36px;
     line-height: 125%;
     color: #E1E1E6;
+}
+
+@media (min-width: 426px){
+   .start {
+    width: 400px;
+   }
+
+   .todosCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+   }
 }

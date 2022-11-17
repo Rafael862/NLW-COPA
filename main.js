@@ -34,20 +34,14 @@ function start(){
 
 }
 
-function voltar(){
-
-    document.querySelector('.voltar').innerHTML = `<button id="voltar">Voltar</button>`
-
-}
-
 start();
-//testando
+
 document.querySelector('#app').innerHTML = `
 <header>
             <img src="assets/logo.svg" alt="">
         </header>
         <main id="cards">
-        <div id="cardHide">
+        <div class="todosCards" id="cardHide">
             ${createCard("20/11/2022","domingo",createGame('Catar', '13:00', 'Equador'))}
             <br>
             ${createCard("21/11/2022", "segunda",createGame('Inglaterra', '10:00', 'Irã') + createGame('Senegal', '13:00', 'Holanda')+ createGame('Estados-Unidos', '16:00', 'Gales'))}
@@ -109,35 +103,13 @@ let dataAtual = moment().format('DD/MM/YYYY');
 document.querySelector('.data').innerHTML = `Hoje é ${dataAtual}`;
 
 bnttodosJogos.addEventListener("click", function(){
-    let voltar = document.querySelector(".voltar");
     document.querySelector(".start").setAttribute("class", "hide");
-    cards.removeAttribute("class", "cardHide");
     cards.removeAttribute("id", "cardHide");
     document.querySelector(".data").setAttribute("class", "hide");
-    voltar.removeAttribute("id", "cardHide");
     
 });
 
 btnVoltar = document.querySelector('#voltarH');
-
-btnVoltar.addEventListener("click", () => {
-
-     let voltar = document.querySelector("#voltarH");
-     let voltar2 = document.querySelector(".voltar");
-
-     let start = document.querySelector("#start");
-     let data = document.querySelector("#data");
-
-     data.removeAttribute("class", "hide");
-     data.setAttribute("class", "data");
-     start.removeAttribute("class", "hide");
-     start.setAttribute("class", "start");
-     document.querySelector(".cardHides").setAttribute("id", "cardHide");
-     voltar.setAttribute("id", "cardHide");
-     voltar2.setAttribute("id", "cardHide");
-
-
-});
 
 bntJogosHoje.addEventListener("click", () =>{
     
@@ -146,8 +118,6 @@ bntJogosHoje.addEventListener("click", () =>{
         document.querySelector(".start").setAttribute("class", "hide");
 
         document.querySelector(".data").setAttribute("class", "hide");
-
-        voltar();
 
         alert("Me ajuda compartilhando aí");
 
