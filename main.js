@@ -99,6 +99,8 @@ let bntJogosHoje = document.getElementById('jogosHoje');
 let cards = document.querySelector('#cardHide');
 
 let dataAtual = moment().format('DD/MM/YYYY');
+
+//dataAtual = "03/12/2022";
  
 document.querySelector('.data').innerHTML = `Hoje é ${dataAtual}`;
 
@@ -114,6 +116,8 @@ btnVoltar = document.querySelector('#voltarH');
 bntJogosHoje.addEventListener("click", () =>{
     
     let dataAtual = moment().format('DD/MM/YYYY');
+
+    //dataAtual = "03/12/2022";
         
         document.querySelector(".start").setAttribute("class", "hide");
 
@@ -355,9 +359,34 @@ bntJogosHoje.addEventListener("click", () =>{
                     </header>
                     <main id="cards">
                     <div>
-                    ${createCard("02/12/2022", "sexta",createGame('Coreia-do-Sul', '07:00', 'Portugal')
-                    + createGame('Gana', '10:00', 'Uruguai')+ createGame('Sérvia', '13:00', 'Suíça')
+                    ${createCard("02/12/2022", "sexta",createGame('Coreia-do-Sul', '12:00', 'Portugal')
+                    + createGame('Gana', '12:00', 'Uruguai')+ createGame('Sérvia', '16:00', 'Suíça')
                     + createGame('Camarões', '16:00', 'Brasil'))}
+                    </div>    
+                    </main>
+            `
+            case '03/12/2022':
+            document.querySelector('#app').innerHTML = `
+            <header>
+                        <img src="assets/logo.svg" alt="">
+                    </header>
+                    <main id="cards">
+                    <div>
+                    ${createCard("03/12/2022", "sábado",createGame('Holanda', '12:00', 'Estados-Unidos')
+                    + createGame('Argentina', '16:00', 'Austrália'))}
+                    </div>    
+                    </main>
+            `
+             break;
+             case '04/12/2022':
+            document.querySelector('#app').innerHTML = `
+            <header>
+                        <img src="assets/logo.svg" alt="">
+                    </header>
+                    <main id="cards">
+                    <div>
+                    ${createCard("04/12/2022", "domingo",createGame('França', '12:00', 'Polônia')
+                    + createGame('Inglaterra', '16:00', 'Senegal'))}
                     </div>    
                     </main>
             `
