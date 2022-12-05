@@ -117,7 +117,7 @@ bntJogosHoje.addEventListener("click", () =>{
     
     let dataAtual = moment().format('DD/MM/YYYY');
 
-    //dataAtual = "03/12/2022";
+    //dataAtual = "09/12/2022";
         
         document.querySelector(".start").setAttribute("class", "hide");
 
@@ -365,28 +365,28 @@ bntJogosHoje.addEventListener("click", () =>{
                     </div>    
                     </main>
             `
-            case '03/12/2022':
+            case '06/12/2022':
             document.querySelector('#app').innerHTML = `
             <header>
                         <img src="assets/logo.svg" alt="">
                     </header>
                     <main id="cards">
                     <div>
-                    ${createCard("03/12/2022", "sábado",createGame('Holanda', '12:00', 'Estados-Unidos')
-                    + createGame('Argentina', '16:00', 'Austrália'))}
+                    ${createCard("06/12/2022", "terça",createGame('Marrocos', '12:00', 'Espanha')
+                    + createGame('Portugal', '16:00', 'Suíça'))}
                     </div>    
                     </main>
             `
              break;
-             case '04/12/2022':
+             case '09/12/2022':
             document.querySelector('#app').innerHTML = `
             <header>
                         <img src="assets/logo.svg" alt="">
                     </header>
                     <main id="cards">
                     <div>
-                    ${createCard("04/12/2022", "domingo",createGame('França', '12:00', 'Polônia')
-                    + createGame('Inglaterra', '16:00', 'Senegal'))}
+                    ${createCard("09/12/2022", "sexta",createGame('Brasil', '12:00', 'Croácia')
+                    + createGame('Holanda', '16:00', 'Argentina'))}
                     </div>    
                     </main>
             `
